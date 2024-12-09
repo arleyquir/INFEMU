@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#ffffff;
+    color: #0F172A;
+    margin: 0;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.barralateral {
+    width: 220px;
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    transition: left 0.6s ease;
+    padding: 10px 0;
+    box-shadow: 0px 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.barralateral .logo h2 {
+    color:#5D4037;
+    margin-bottom: 30px;
+    margin-top:15px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+}
+
+.barralateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0px;
+}
+
+.barralateral .menu {
+    list-style: none;
+    margin-top:70px;
+}
+
+.barralateral ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 10px;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+}
+
+.barralateral ul li i {
+    flex-shrink: 0;
+    width: 30px;
+    color: #5D4037!important; 
+    transition: color 0.6s ease;
+    transition: margin-left 0.4s ease;
+    margin-left: 17%;
+}
+
+.barralateral ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #5D4037;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.6s ease;
+    transition:padding-left 0.4s ease;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.barralateral ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 223, 0, 0.3);
+    transition: width 0.8s ease;
+    z-index: 0;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.barralateral ul li:hover::before {
+    width: 100%;
+}
+
+.barralateral ul li:hover a {
+    color:#3E2723;
+    padding-left: 20px;
+}
+
+.barralateral ul li:hover i {
+    
+    margin-left: 20%;
+}
